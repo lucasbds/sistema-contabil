@@ -1,0 +1,91 @@
+/* Cor de fundo gradiente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A); /* Gradiente verde */
+    color: white; /* Cor do texto branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    min-height: 100vh;
+}
+
+/* Estilos do título */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+label, input, select {
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* Estilo dos botões 3D */
+button {
+    margin: 10px;
+    padding: 12px;
+    background-color: #ff9800; /* Cor laranja */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px #e68900; /* Sombra que cria o efeito 3D */
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Ocupa toda a largura */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68900; /* Muda a cor ao passar o mouse */
+    box-shadow: 0 2px #cc7a00; /* Sombra diminui para reforçar o efeito de clique */
+    transform: translateY(2px); /* Dá a impressão de que o botão afundou */
+}
+
+button:active {
+    background-color: #cc7a00;
+    box-shadow: 0 1px #b36b00;
+    transform: translateY(4px); /* Botão afunda mais ao clicar */
+}
+
+/* Centralizar os relatórios */
+#relatorios {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do contêiner de relatórios */
+#resultadoRelatorio {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: white; /* Cor do texto nos relatórios */
+}
+
+/* Estilo dos links de navegação */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f1c40f;
+}
