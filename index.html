@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Contabilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Contabilidade</h1>
+    
+    <div id="lancamentos">
+        <h2>Inserir Lançamentos</h2>
+        <form id="lancamentoForm">
+            <label for="conta">Conta:</label>
+            <input type="text" id="conta" required>
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" required>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+            </select>
+            <button type="submit">Adicionar Lançamento</button>
+        </form>
+    </div>
+
+    <div id="relatorios">
+        <h2>Relatórios</h2>
+        <button onclick="gerarBalancete()">Balancete de Verificação</button>
+        <button onclick="gerarDRE()">DRE</button>
+        <button onclick="gerarBalanco()">Balanço Patrimonial</button>
+
+        <div id="resultadoRelatorio"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
